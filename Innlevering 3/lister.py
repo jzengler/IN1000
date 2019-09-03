@@ -1,4 +1,4 @@
-#Scriptet demonstrerer bruk av lister
+#Scriptet demonstrerer bruk av lister i python3
 
 # liste med tre elementer av typen heltall
 tall_liste = [3, 6, 9]
@@ -22,7 +22,7 @@ else:
     print("Glemte du meg?")
 
 
-# lagrer summen av tallene i element 1 og verdien 1 i element 2 til multiplisering under
+# lagrer summen tall_liste i element 1 og verdien 1 i element 2 til multiplisering under
 sum_produkt = [sum(tall_liste),1]
 
 # itererer over tall_liste og multipliserer med produktet av foregående.
