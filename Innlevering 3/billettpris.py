@@ -2,7 +2,7 @@
 
 def beregn_pris():
 
-    alder = int(input("Skriv inn alder"))
+    alder = int(input("Skriv inn alder(år): "))
 
     billettpris = 0
 
@@ -13,8 +13,12 @@ def beregn_pris():
     else:
         billettpris = 60
 
-    print("Billettpris for " + str(alder) + "år : " + str(billettpris) +"kr")
+    print("Billettpris for oppgitt alder (" + str(alder) + ") : " + str(billettpris) + "kr")
 
 
 for i in range(0,4):
     beregn_pris()
+
+
+# Input blir forsøkt konvertert til heltall uten validering av input.
+# Hvis bruker oppgir noe annet enn heltall for alder stopper programmet.
