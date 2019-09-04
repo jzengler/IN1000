@@ -1,4 +1,4 @@
-#Scriptet demonstrerer bruk av lister i python3
+#Scriptet demonstrerer bruk og behandling av lister i python3
 
 # liste med tre elementer av typen heltall
 tall_liste = [3, 6, 9]

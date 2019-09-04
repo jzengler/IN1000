@@ -1,6 +1,4 @@
-
-
-
+#Scriptet demonstrerer bruk og behandling av ordbok i python3
 
 # ordbok for matvarer og pris
 matvarer = {"melk":14.90, "brød":24.90, "yoghurt":12.90, "pizza":39.90}
