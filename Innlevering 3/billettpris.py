@@ -1,4 +1,6 @@
-#Prosedyre som beregner billettpris basert på oppgitt alder
+'''
+Prosedyre som beslutter billettpris basert på oppgitt alder
+'''
 
 def beregn_pris():
 

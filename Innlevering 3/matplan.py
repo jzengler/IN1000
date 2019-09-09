@@ -1,5 +1,7 @@
-# Scriptet inneholder en prosdeyre som slår opp matplanen til en beboer fra en ordbok
-# Svar på  deloppgave 3 er skrevet nederst i filen
+'''
+Scriptet inneholder en prosdeyre som slår opp matplanen til en beboer fra en ordbok
+Svar på  deloppgave 3 er skrevet nederst i filen
+'''
 
 
 # Oppretter ordboken for beboere og måltid
