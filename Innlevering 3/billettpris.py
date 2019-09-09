@@ -22,5 +22,5 @@ for i in range(0,4):
     beregn_pris()
 
 
-# Input blir forsøkt konvertert til heltall.
-# Hvis bruker oppgir noe annet enn heltall oppstår en kjøretidsfeil med feilmelding ValueError.
+# Input blir forsokt konvertert til heltall.
+# Hvis bruker oppgir noe annet enn heltall oppstaar en kjoretidsfeil med feilmelding ValueError.

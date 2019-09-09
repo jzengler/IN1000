@@ -1,6 +1,10 @@
 '''
 Lag et quiz-program som tar for seg hvilke land ulike bilmerker kommer fra.
-Løs oppgaven ved å bruke ordboker.
+Løs oppgaven ved å bruke ordbok.
+Brukeren skal få tilbakemelding på om svaret er rett eller galt.
+Hvis svaret er galt skal brukeren også informeres om hva som er rett.
+Til slutt skal det skrives ut en poengsum av totalt antall mulige.
+Hvert spørsmål teller ett poeng.
 '''
 
 

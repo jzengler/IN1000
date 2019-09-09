@@ -8,13 +8,13 @@ Svar på  deloppgave 3 er skrevet nederst i filen
 matplan = {"Ola Dunk":["Bacon", "Kneip med leverpostei", "Koteletter"],
 "Kari Havrenakke":["Havrefras","Napoelonskake","Betasuppe"]}
 
-# Prosedyre for å søke opp matplan for beboer
+# Prosedyre for å soke opp matplan for beboer
 def vis_matplan():
 
     # Tar navn som input og gjør om navn til å begynne med versaler
     navn = input("Skriv inn navn på beboer for å vise matplan: ").title()
 
-    # Hvis navn er en nøkkel i matplan
+    # Hvis navn er en nokkel i matplan
     if navn in matplan:
 
         #Skriv ut måltidene
