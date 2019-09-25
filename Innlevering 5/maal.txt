@@ -1,0 +1,4 @@
+Skulderbredde 22
+Halsvidde 11
+Livvidde 30
+Benlengde 32
