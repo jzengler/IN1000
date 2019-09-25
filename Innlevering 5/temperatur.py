@@ -2,31 +2,35 @@
 skriver ut gjennomsnittstemperatur fra fil med månedlige temperaturer
 '''
 
-# importer for å finne filsti til scriptet og behandle filbane
-import sys
-import os
+# importer urllib
+import urllib.request
 
-# 1
-# stien til temperatur.py plassering
-pySti = os.path.dirname( sys.argv[0] )
+# Url til fil med temperaturer
+oblig_url = "https://www.uio.no/studier/emner/matnat/ifi/IN1000/h19/Obligatoriske-innleveringer/temperatur.txt"
+# åpne url-filen med urllib
+respons = urllib.request.urlopen(oblig_url)
 
-# forutsetter at filen ligger i samme mappe som scriptet
-filbane =  os.path.join( pySti, "temperatur.txt" )
-
-# åpne filen og fjern new line for hver linje slik at temperaturene blir en liste
-tempAar = [ float( linje.rstrip("\n") ) for linje in open( filbane , "r") ]
+# tom liste for å holde temperaturene
+tempAar = []
+# legg til hver temperatur som flyttal i listen
+for linje in respons:
+    tempAar.append( float(linje) )
 
 # 2
 # funksjon gjennomsnitt
 def gjennomsnitt(a):
 
+    # kortvarianten
     #return sum(a) / len(a)
 
+    # startverdi for gjennomsnittsberegning
     total = 0
-    # loop it is
+    # summer elementene i tempAar
     for x in a:
         total += x
 
+    # returner summen av temperaturene delt på antallet oppføringer
     return total / len(a)
 
+# Skriv gjennomsnittstemperaturen ved å kalle på funksjonen gjenomsnitt
 print( "Gjennomsnittstemperatur:", gjennomsnitt(tempAar) )
