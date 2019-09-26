@@ -13,17 +13,7 @@ Lag deretter en prosedyre som tar imot en liste av mål og benytter seg av
 '''
 
 
-#opprett tom ordbok
-lagretMaal = {}
 
-# åpne filen maal.txt med lesetilgang
-with open("maal.txt", "r") as maal:
-    # fjern new line og split hver linje på mellomrom
-    for linje in maal:
-        l = linje.rstrip("\n").split(" ")
-
-        # bruk første element som nøkkel og andre som verdi
-        lagretMaal[l[0]] = l[1]
 
 # prosedyre som tar en liste av mål og konverterer til cm
 def konverterMaal(maal):
@@ -35,5 +25,20 @@ def tommerTilCm(tommer):
     assert tommer > 0, "parameter maa være storre enn 0"
     return tommer * 2.54
 
-# konverter målene fra filen til cm
-konverterMaal(lagretMaal.values())
+def hovedprogram():
+    #opprett tom ordbok
+    lagretMaal = {}
+
+    # åpne filen maal.txt med lesetilgang
+    with open("maal.txt", "r") as maal:
+        # fjern new line og split hver linje på mellomrom
+        for linje in maal:
+            l = linje.rstrip("\n").split(" ")
+
+            # bruk første element som nøkkel og andre som verdi
+            lagretMaal[l[0]] = l[1]
+
+    # konverter målene fra filen til cm
+    konverterMaal(lagretMaal.values())
+
+hovedprogram()
