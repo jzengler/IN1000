@@ -1,7 +1,6 @@
 
 
-# 1.
-mineOrd = []
+
 
 # 2.
 # funksjon som konkatenerer to strenger
@@ -15,26 +14,32 @@ def skrivUt(liste):
     for e in liste:
         print(e)
 
-# 4.
-#
-valg = 0
-while valg != "s":
+def hovedprogram():
+    # 1.
+    mineOrd = []
 
-    print("\ni: Konkatener to strenger")
-    print("u: Skriv ut elementer i liste")
-    print("s: Avslutt")
-    valg = input("Skriv inn meny valg: ").lower()
+    # 4.
+    valg = 0
+    while valg != "s":
 
-    # a.
-    if valg == "i":
-        streng1 = input("\nSkriv inn den første strengen: ")
-        streng2 = input("Skriv inn den andre strengen: ")
-        mineOrd.append( slaaSammen(streng1, streng2) )
+        print("\ni: Konkatener to strenger")
+        print("u: Skriv ut elementer i liste")
+        print("s: Avslutt")
+        valg = input("Skriv inn meny valg: ").lower()
 
-    # b.
-    elif valg == "u":
-        skrivUt(mineOrd)
+        # a.
+        if valg == "i":
+            streng1 = input("\nSkriv inn den første strengen: ")
+            streng2 = input("Skriv inn den andre strengen: ")
+            mineOrd.append( slaaSammen(streng1, streng2) )
 
-    # c.
-    elif valg == "s":
-        exit()
+            # b.
+        elif valg == "u":
+            skrivUt(mineOrd)
+
+            # c.
+        elif valg == "s":
+            exit()
+
+
+hovedprogram()
