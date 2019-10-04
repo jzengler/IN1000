@@ -15,3 +15,5 @@ def innlesing(filnavn):
         for selger in salgsfil:
             s = selger.rstrip("\n").split(" ")
             salg[s[0]] = int(s[1])
+
+    return salg
