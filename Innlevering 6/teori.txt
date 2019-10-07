@@ -1,7 +1,6 @@
 1. Hva er innkapsling? Hvorfor er det nyttig?
   Innkapsling er et prinsipp som tilbyr tilgang til utvalgte metoder i klassen, et grensesnitt.
   Det gir mulighet for å endre klassens indre struktur uten at det får konsekvenser for bruken av klassen.
-  Det forutsetter at grensesnittet ikke endres.
 
 2. Hva er grensesnittet til en klasse? Hvordan skiller det seg fra implementasjonen av en klasse?
   Grensesnittet er de metodene som programmereren tilbys ved bruk av klassen.
@@ -9,5 +8,5 @@
   I Python skilles dette gjennom konvensjoner, der understrek før navnet angir om den er offentlig eller ikke.
 
 3.  Hva er en instansmetode, og hvordan skiller dette seg fra prosyderene/funksjonene vi har møtt hittil.
-  Instansmetode benyttes ved opprettelsen av et objekt i en klasse, altså konstruktøren for objektet.
-  Øvrige prosyderer og funksjoner benyttes for å behandle objektet etter opprettelse.
+  Instansmetode er en metode som benyttes mot et objekt av en klasse.
+  Prosedyrer og funksjoner som tidligere benyttet er ikke bundet til en instans.
