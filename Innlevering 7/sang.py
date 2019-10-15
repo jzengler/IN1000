@@ -1,4 +1,3 @@
-
 class Sang:
 
     def __init__(self,tittel, artist):
