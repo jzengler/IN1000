@@ -7,12 +7,10 @@ class Sang:
 
 
     def spill(self):
-
         print("Spiller", self._tittel, "av", self._artist)
 
 
     def sjekkArtist(self, navn):
-
         if any(ord in navn
                for ord in self._artist.split() ):
             return True
@@ -21,7 +19,6 @@ class Sang:
 
 
     def sjekkTittel(self, tittel):
-
         if str(tittel).lower() == self._tittel.lower():
             return True
         else:
@@ -29,7 +26,6 @@ class Sang:
 
 
     def sjekkArtistogTittel(self, artist, tittel):
-
         if self.sjekkTittel(tittel) and self.sjekkArtist(artist):
             return True
         else:
