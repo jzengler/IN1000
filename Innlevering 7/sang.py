@@ -1,10 +1,11 @@
 class Sang:
 
+# konstruktør
     def __init__(self,tittel, artist):
         self._tittel = str(tittel)
         self._artist = str(artist)
 
-
+# funksjonsmetoder
     def spill(self):
         print("Spiller", self._tittel, "av", self._artist)
 

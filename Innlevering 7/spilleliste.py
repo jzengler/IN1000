@@ -1,15 +1,17 @@
 from sang import Sang
 
+# konstruktør
 class Spilleliste:
     def __init__(self, listenavn):
+        # tom liste for å holde addresser til sang-objekter
         self._sanger = []
         self._navn = listenavn
 
-
+    # metoder for klassen Spilleliste
     def lesFraFil(self, filnavn):
         with open(filnavn, "r") as spilleliste:
             for spor in spilleliste:
-                sang = spor.strip("\r\n").split(";")
+                sang = spor.strip().split(";")
                 self._sanger.append( Sang(tittel=sang[0], artist=sang[1]) )
 
 
