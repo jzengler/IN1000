@@ -1,0 +1,18 @@
+oppgave 3
+
+a)
+se datastrukturer.pdf
+
+b)
+Når det legges til sanger i spillelisten inneholder hvert element en minneaddresse til et objekt av typen sang.
+Det trengs derfor ikke noe nøkkelverdi for å identifisere objektet ettersom det allerede pekes til unike objekter.
+
+Det trengs heller ikke noen logikk for å opprette og håndtere nøkler slik som for en ordbok.
+
+c)
+Ved implementere innlesing fra filnavn som en metode kan det leses inn sanger fra flere filer til en spilleliste.
+Det er mange tilfeller der det kan være nyttig, for eksempel der album eller artister er lagret i separate tekstfiler.
+Da kan også disse filene benyttes i flere spillelister for å få ulike sammensetninger av sanger.
+
+Ved mange og store filer som skal leses inn kan man programmatisk unngå å lese inn alt ved opprettelsen av listene.
+Leses filene ved behov fremfor ved oppretting av listene kan ressursbruken reduseres under oppstart av programmet.
