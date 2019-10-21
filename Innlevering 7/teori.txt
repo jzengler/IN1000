@@ -11,8 +11,8 @@ Det trengs heller ikke noen logikk for å opprette og håndtere nøkler slik som
 
 c)
 Ved implementere innlesing fra filnavn som en metode kan det leses inn sanger fra flere filer til en spilleliste.
-Det er mange tilfeller der det kan være nyttig, for eksempel der album eller artister er lagret i separate tekstfiler.
+Det er mange tilfeller der det kan være nyttig, for eksempel der album eller artister er lagret i separate filer.
 Da kan også disse filene benyttes i flere spillelister for å få ulike sammensetninger av sanger.
 
-Ved mange og store filer som skal leses inn kan man programmatisk unngå å lese inn alt ved opprettelsen av listene.
+Ved mange og store filer som skal leses inn kan man programmatisk unngå å lese inn alt ved opprettelsen av spillelister.
 Leses filene ved behov fremfor ved oppretting av listene kan ressursbruken reduseres under oppstart av programmet.
