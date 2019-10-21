@@ -12,7 +12,7 @@ class Sang:
 
     def sjekkArtist(self, navn):
         if any(ord in navn
-               for ord in self._artist.split() ):
+            for ord in self._artist.split() ):
             return True
         else:
             return False
