@@ -2,10 +2,18 @@ from spillebrett import Spillebrett
 
 
 def main():
-    liteBrett = Spillebrett(5,5)
-    liteBrett.tegnBrett()
 
-    stortBrett = Spillebrett(20,20)
-    stortBrett.tegnBrett()
+    print("Oppgi dimensjoner på spillebrettet")
+    kolonner = int( input("Antall kolonner: ") )
+    rader = int( input("Antall rader: ") )
+
+    nyttSpill = Spillebrett(rader,kolonner)
+    nyttSpill.tegnBrett()
+    #naboer = nyttSpill.finnNabo(1,0)
+
+
+    while( input("Trykk [q] for aa avslutte\nTrykk [enter] for aa fortsette").lower() != "q" ):
+        nyttSpill.oppdatering()
+        nyttSpill.tegnBrett()
 
 main()
