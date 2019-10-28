@@ -26,9 +26,9 @@ class Spillebrett:
 
     ### tegn spillebrettet i terminalvinduet
     def tegnBrett(self):
-        # "scroller" terminalvinduet
-        #print('\x1b[2J')
-        system('cls' if name == 'nt' else 'clear')
+        # tøm terminalvinduet før tegning
+        system('cls' if name == 'nt'
+                else 'clear')
 
         #skriver ut spillebrettet
         print("### The Game of Life ###\n")
