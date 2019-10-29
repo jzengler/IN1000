@@ -23,7 +23,6 @@ class Spillebrett:
         self._generer()
 
 
-
     ### tegn spillebrettet i terminalvinduet
     def tegnBrett(self):
         # tøm terminalvinduet før tegning
@@ -35,12 +34,11 @@ class Spillebrett:
 
         for rad in self._rutenett:
             for celle in rad:
-                print( "|" + celle.hentStatusTegn(), end="")
-            print("|")
+                print(" " + celle.hentStatusTegn(), end="")
+            print()
 
         print("Generasjon:", self._generasjon)
         print("Antall levende celler:", self.finnAntallLevende())
-
 
     ### oppdaterer cellestatus og generasjonsnummer
     def oppdatering(self):
@@ -85,7 +83,6 @@ class Spillebrett:
         # inkrementer generasjon
         self._generasjon += 1
 
-
     ### returner antall levende celler
     def finnAntallLevende(self):
         antallLevende = 0
@@ -96,7 +93,6 @@ class Spillebrett:
                     antallLevende += 1
 
         return antallLevende
-
 
     ### sett tilfeldig cellestatus
     def _generer(self):

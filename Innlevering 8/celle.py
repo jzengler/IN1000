@@ -22,7 +22,7 @@ class Celle:
 
 
     def hentStatusTegn(self):
-        
+
         if self._status == True:
             return "O"
         else:

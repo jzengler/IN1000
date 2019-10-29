@@ -12,7 +12,7 @@ def main():
     #naboer = nyttSpill.finnNabo(1,0)
 
 
-    while( input("Trykk [q] for aa avslutte\nTrykk [enter] for aa fortsette").lower() != "q" ):
+    while( input("Trykk [q] for aa avslutte\nTrykk [enter] for aa fortsette\n").lower() != "q" ):
         nyttSpill.oppdatering()
         nyttSpill.tegnBrett()
 
