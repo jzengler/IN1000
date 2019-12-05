@@ -11,7 +11,6 @@ print ( gull(test) )
 
 
 
-
 list = [22,32]
 list = ["Moldova", "AG"]
 list[0]
